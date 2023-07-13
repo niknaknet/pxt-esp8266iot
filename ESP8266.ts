@@ -92,7 +92,7 @@ namespace ESP8266_IoT {
         serial.readString()
         sendAT("AT+CWMODE=1", 500) // set to STA mode
         sendAT("AT+SYSTIMESTAMP=1634953609130", 100) // Set local timestamp.
-        sendAT(`AT+CIPSNTPCFG=1,8,"ntp1.aliyun.com","0.pool.ntp.org","time.google.com"`, 100)
+        sendAT(`AT+CIPSNTPCFG=1,0,"ntp1.aliyun.com","0.pool.ntp.org","time.google.com"`, 100)
     }
 
     /**
