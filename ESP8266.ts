@@ -22,7 +22,13 @@ namespace ESP8266_IoT {
         //% block="TCP"
         TCP = 1,
         //% block="TLS"
-        TLS = 2
+        TLS = 2,
+        //% block="TLS_SERVER_CERT"
+        TLS_SERVER_CERT = 3,
+        //% block="TLS_CLIENT_CERT"
+        TLS_CLIENT_CERT = 4,
+        //% block="TLS_BOTH_CERTS"
+        TLS_BOTH_CERTS = 5
     }
 
     export enum QosList {
